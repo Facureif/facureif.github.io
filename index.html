@@ -233,6 +233,59 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Proyecto 4 - Landing -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-carousel" id="carousel-doctor">
+                            <div class="carousel-item">
+                                <img src="proyectos/landing dr/portada.png" alt="Landing médico - Sección principal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/landing dr/dr.png" alt="Landing médico - Sobre el doctor">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/landing dr/solturno.png" alt="Landing médico - Servicios">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/landing dr/ordenso.png" alt="Landing médico - Obras sociales">
+                            </div>
+                        </div>
+
+                        <div class="carousel-nav">
+                            <div class="carousel-dot active" data-index="0" data-carousel="doctor"></div>
+                            <div class="carousel-dot" data-index="1" data-carousel="doctor"></div>
+                            <div class="carousel-dot" data-index="2" data-carousel="doctor"></div>
+                            <div class="carousel-dot" data-index="3" data-carousel="doctor"></div>
+                            <div class="carousel-dot" data-index="4" data-carousel="doctor"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Landing Profesional para Médico Clínico</h3>
+                        <p>
+                            Diseño y desarrollo de una landing page moderna y optimizada para un médico clínico. 
+                            El sitio presenta información del profesional, servicios, obras sociales, horarios de atención 
+                            y un llamado a la acción claro para solicitar turno.  
+                            Se trabajó con un enfoque en experiencia de usuario, accesibilidad, SEO y carga rápida.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                            <span class="project-tag">Responsive Design</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="view-project-btn" onclick="openProjectModal('modal-project-doctor')">
+                                <i class="fas fa-eye"></i> Ver Proyecto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -581,6 +634,122 @@
             </div>
         </div>
     </div>
+<!-- modal landing dr -->
+    <div id="modal-project-doctor" class="modal-project">
+        <div class="modal-project-content">
+
+            <div class="modal-project-header">
+                <h2>Landing Profesional para Médico Clínico</h2>
+                <button class="close-button" onclick="closeProjectModal('modal-project-doctor')">&times;</button>
+            </div>
+
+            <div class="modal-project-body">
+
+                <!-- Descripción -->
+                <div class="modal-project-description">
+                    <p>
+                        Landing page desarrollada para presentar la información profesional de un médico clínico, 
+                        incluyendo servicios, presentación personal, obras sociales aceptadas, horarios de atención 
+                        y enlaces de contacto. 
+                    </p>
+                    <p>
+                        El objetivo principal fue crear un sitio atractivo, rápido y orientado a la conversión, 
+                        aprovechando tecnologías modernas de frontend para asegurar una experiencia limpia y profesional.
+                    </p>
+                </div>
+
+                <!-- Características -->
+                <div class="modal-project-features">
+                    <h4>Características principales:</h4>
+                    <ul>
+                        <li>Sección de presentación del médico con foto profesional</li>
+                        <li>Listado de servicios ofrecidos</li>
+                        <li>Catálogo de obras sociales aceptadas</li>
+                        <li>Modal interactivo para consultar cobertura por plan</li>
+                        <li>Horarios de atención por consultorio</li>
+                        <li>Botones de acción para solicitar turno y contacto</li>
+                        <li>Diseño totalmente responsive y optimizado</li>
+                        <li>SEO básico implementado para mayor visibilidad</li>
+                    </ul>
+                </div>
+
+                <!-- Objetivos cumplidos -->
+                <div class="modal-project-features">
+                    <h4>Objetivos cumplidos:</h4>
+                    <ul>
+                        <li>Mejorar presencia digital del profesional</li>
+                        <li>Centralizar toda su información en un solo sitio</li>
+                        <li>Optimizar la conversión de pacientes vía contacto</li>
+                        <li>Transmitir profesionalismo y confianza</li>
+                        <li>Brindar una UX clara y accesible</li>
+                    </ul>
+                </div>
+
+                <!-- Mi rol -->
+                <div class="modal-project-features">
+                    <h4>Mi rol en el proyecto:</h4>
+                    <ul>
+                        <li>Diseño UX/UI de toda la landing, incluyendo estructura, wireframes y componentes</li>
+                        <li>Desarrollo completo en Next.js con Tailwind</li>
+                        <li>Optimización de imágenes y carga del sitio</li>
+                        <li>Implementación del modal de cobertura de obras sociales</li>
+                        <li>Ajustes responsivos para móvil, tablet y desktop</li>
+                    </ul>
+                </div>
+
+                <!-- Carrusel de imágenes -->
+                <div class="modal-project-carousel">
+                    <h4>Imágenes:</h4>
+
+                    <div class="modal-project-carousel-inner" id="modal-carousel-doctor">
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/landing dr/portada.png" alt="Hero principal de la landing">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/landing dr/dr.png" alt="Sección Sobre el Doctor">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/landing dr/solturno.png" alt="Servicios ofrecidos">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/landing dr/ordenso.png" alt="Listado de obras sociales">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/landing dr/fulldr.png" alt="Horarios de atención">
+                        </div>
+                    </div>
+
+                    <div class="modal-project-carousel-nav">
+                        <div class="modal-project-carousel-dot active" data-index="0" data-carousel="modal-carousel-doctor"></div>
+                        <div class="modal-project-carousel-dot" data-index="1" data-carousel="modal-carousel-doctor"></div>
+                        <div class="modal-project-carousel-dot" data-index="2" data-carousel="modal-carousel-doctor"></div>
+                        <div class="modal-project-carousel-dot" data-index="3" data-carousel="modal-carousel-doctor"></div>
+                        <div class="modal-project-carousel-dot" data-index="4" data-carousel="modal-carousel-doctor"></div>
+                    </div>
+
+                    <button class="carousel-project-arrow prev" onclick="moveModalCarousel('modal-carousel-doctor', -1)">❮</button>
+                    <button class="carousel-project-arrow next" onclick="moveModalCarousel('modal-carousel-doctor', 1)">❯</button>
+                </div>
+
+                <!-- Tecnologías -->
+                <div class="modal-project-tech">
+                    <h4>Tecnologías utilizadas:</h4>
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Tailwind CSS</span>
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Git</span>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
 
 <!-- Modal para imagen ampliada -->
 <div id="image-zoom-modal" class="image-zoom-modal">
