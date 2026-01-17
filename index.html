@@ -284,8 +284,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -513,8 +511,6 @@
         </div>
     </div>
 
-
-
     <!-- Modal Proyecto 3 -->
     <div id="modal-project-3" class="modal-project">
         <div class="modal-project-content">
@@ -625,26 +621,19 @@
                         <span class="project-tag">Git</span>
                     </div>
                 </div>
-                
-                <!-- <div class="modal-project-links">
-                    <a href="https://github.com/NataliMD/proyecto_estimulo.git" class="modal-project-link">
-                        <i class="fab fa-github"></i> Ver código
-                    </a>
-                </div> -->
             </div>
         </div>
     </div>
-<!-- modal landing dr -->
+
+    <!-- modal landing dr -->
     <div id="modal-project-doctor" class="modal-project">
         <div class="modal-project-content">
-
             <div class="modal-project-header">
                 <h2>Landing Profesional para Médico Clínico</h2>
                 <button class="close-button" onclick="closeProjectModal('modal-project-doctor')">&times;</button>
             </div>
 
             <div class="modal-project-body">
-
                 <!-- Descripción -->
                 <div class="modal-project-description">
                     <p>
@@ -700,7 +689,6 @@
                 <!-- Carrusel de imágenes -->
                 <div class="modal-project-carousel">
                     <h4>Imágenes:</h4>
-
                     <div class="modal-project-carousel-inner" id="modal-carousel-doctor">
                         <div class="modal-project-carousel-item">
                             <img src="proyectos/landing dr/portada.png" alt="Hero principal de la landing">
@@ -718,7 +706,6 @@
                             <img src="proyectos/landing dr/fulldr.png" alt="Horarios de atención">
                         </div>
                     </div>
-
                     <div class="modal-project-carousel-nav">
                         <div class="modal-project-carousel-dot active" data-index="0" data-carousel="modal-carousel-doctor"></div>
                         <div class="modal-project-carousel-dot" data-index="1" data-carousel="modal-carousel-doctor"></div>
@@ -726,7 +713,6 @@
                         <div class="modal-project-carousel-dot" data-index="3" data-carousel="modal-carousel-doctor"></div>
                         <div class="modal-project-carousel-dot" data-index="4" data-carousel="modal-carousel-doctor"></div>
                     </div>
-
                     <button class="carousel-project-arrow prev" onclick="moveModalCarousel('modal-carousel-doctor', -1)">❮</button>
                     <button class="carousel-project-arrow next" onclick="moveModalCarousel('modal-carousel-doctor', 1)">❯</button>
                 </div>
@@ -744,31 +730,28 @@
                         <span class="project-tag">Git</span>
                     </div>
                 </div>
-
+            </div>
         </div>
     </div>
-</div>
 
-
-
-<!-- Modal para imagen ampliada -->
-<div id="image-zoom-modal" class="image-zoom-modal">
-    <span class="zoom-close-btn" onclick="closeZoomModal()">&times;</span>
-    <div class="zoom-counter" id="zoom-counter">1 / 7</div>
-    <div class="zoom-level" id="zoom-level">100%</div>
-    <div class="zoom-controls">
-        <button class="zoom-control-btn" onclick="zoomImage(0.8)" title="Alejar">−</button>
-        <button class="zoom-control-btn" onclick="resetZoom()" title="Tamaño normal">↺</button>
-        <button class="zoom-control-btn" onclick="zoomImage(1.25)" title="Acercar">+</button>
+    <!-- Modal para imagen ampliada -->
+    <div id="image-zoom-modal" class="image-zoom-modal">
+        <span class="zoom-close-btn" onclick="closeZoomModal()">&times;</span>
+        <div class="zoom-counter" id="zoom-counter">1 / 7</div>
+        <div class="zoom-level" id="zoom-level">100%</div>
+        <div class="zoom-controls">
+            <button class="zoom-control-btn" onclick="zoomImage(0.8)" title="Alejar">−</button>
+            <button class="zoom-control-btn" onclick="resetZoom()" title="Tamaño normal">↺</button>
+            <button class="zoom-control-btn" onclick="zoomImage(1.25)" title="Acercar">+</button>
+        </div>
+        <div class="image-zoom-content">
+            <img id="zoomed-image" src="" alt="Imagen ampliada">
+        </div>
+        <div class="zoom-nav">
+            <button class="zoom-nav-btn prev" onclick="navigateZoom(-1)">❮</button>
+            <button class="zoom-nav-btn next" onclick="navigateZoom(1)">❯</button>
+        </div>
     </div>
-    <div class="image-zoom-content">
-        <img id="zoomed-image" src="" alt="Imagen ampliada">
-    </div>
-    <div class="zoom-nav">
-        <button class="zoom-nav-btn prev" onclick="navigateZoom(-1)">❮</button>
-        <button class="zoom-nav-btn next" onclick="navigateZoom(1)">❯</button>
-    </div>
-</div>
 
     <!-- Próximos Proyectos Section -->
     <section id="prox_projects" class="prox-projects">
@@ -784,7 +767,6 @@
                         <p>Proyecto en desarrollo orientado a la automatización de procesos empresariales mediante flujos construidos con <strong>n8n</strong>. Incluye bots de scraping que extraen datos clave desde sitios web públicos y privados, integraciones con APIs de terceros, y la presentación de datos en un <strong>dashboard interactivo</strong> para análisis en tiempo real.</p>
                         <p>Estas herramientas permiten a las organizaciones <strong>optimizar tareas repetitivas</strong>, reducir el margen de error y <strong>mejorar la toma de decisiones</strong> basada en datos actuales y automatizados.</p>
                     </div>
-
                 </div>
                 <div class="project-card prox-card">
                     <div class="project-image prox-image">
@@ -832,78 +814,76 @@
                     </div>
                 </div>
 
-
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
-                        <div id="formMessage" style="display: none; margin-top: 15px; padding: 10px; border-radius: 5px;"></div>
-                    </form>
-
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                    <div id="formMessage" style="display: none; margin-top: 15px; padding: 10px; border-radius: 5px;"></div>
+                </form>
             </div>
         </div>    
     </section>
-    
-    <script src="script.js"></script>
 
-<script>
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
+    <!-- Scripts -->
+    <script src="script.js"></script>
     
-    const form = e.target;
-    const submitButton = form.querySelector('button[type="submit"]');
-    const messageDiv = document.getElementById('formMessage');
-    
-    // Cambiar texto del botón
-    const originalText = submitButton.textContent;
-    submitButton.textContent = 'Enviando...';
-    submitButton.disabled = true;
-    
-    try {
-        const response = await fetch('https://formspree.io/f/xkgqbjge', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: form.name.value,
-                email: form.email.value,
-                message: form.message.value
-            })
-        });
+    <script>
+    // Solo el código del formulario
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
         
-        if (response.ok) {
-            messageDiv.textContent = '¡Mensaje enviado correctamente!';
-            messageDiv.style.backgroundColor = '#d4edda';
-            messageDiv.style.color = '#155724';
+        const form = e.target;
+        const submitButton = form.querySelector('button[type="submit"]');
+        const messageDiv = document.getElementById('formMessage');
+        
+        const originalText = submitButton.textContent;
+        submitButton.textContent = 'Enviando...';
+        submitButton.disabled = true;
+        
+        try {
+            const response = await fetch('https://formspree.io/f/xkgqbjge', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: form.name.value,
+                    email: form.email.value,
+                    message: form.message.value
+                })
+            });
+            
+            if (response.ok) {
+                messageDiv.textContent = '¡Mensaje enviado correctamente!';
+                messageDiv.style.backgroundColor = '#d4edda';
+                messageDiv.style.color = '#155724';
+                messageDiv.style.display = 'block';
+                form.reset();
+            } else {
+                throw new Error('Error en el envío');
+            }
+        } catch (error) {
+            messageDiv.textContent = 'Error al enviar el mensaje. Por favor, inténtalo de nuevo.';
+            messageDiv.style.backgroundColor = '#f8d7da';
+            messageDiv.style.color = '#721c24';
             messageDiv.style.display = 'block';
-            form.reset();
-        } else {
-            throw new Error('Error en el envío');
+            console.error('Error:', error);
+        } finally {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
         }
-    } catch (error) {
-        messageDiv.textContent = 'Error al enviar el mensaje. Por favor, inténtalo de nuevo.';
-        messageDiv.style.backgroundColor = '#f8d7da';
-        messageDiv.style.color = '#721c24';
-        messageDiv.style.display = 'block';
-        console.error('Error:', error);
-    } finally {
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-    }
-});
-</script>
+    });
+    </script>
 
 </body>
 </html>
-
