@@ -114,6 +114,61 @@
         <div class="container">
             <h2>Proyectos Destacados</h2>
             <div class="projects-container">
+
+                <!-- Proyecto - Concesionaria -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-carousel" id="carousel-5">
+                            <div class="carousel-item">
+                                <img src="proyectos/Concesionaria/Catalogo.png" alt="Catalogo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/Concesionaria/detalle.png" alt="Control financiero">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/Concesionaria/Dashboard.png" alt="Dashboard principal">
+                            </div>                            
+                            <div class="carousel-item">
+                                <img src="proyectos/Concesionaria/vehiculos_list.png" alt="Gestión de vehículos">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <div class="carousel-dot active" data-index="0" data-carousel="5"></div>
+                            <div class="carousel-dot" data-index="1" data-carousel="5"></div>
+                            <div class="carousel-dot" data-index="2" data-carousel="5"></div>
+                            <div class="carousel-dot" data-index="3" data-carousel="5"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Sistema de Gestión Integral para Concesionarias</h3>
+
+                        <p>
+                            Plataforma comercial y administrativa desarrollada para concesionarias de vehículos,
+                            diseñada para centralizar la gestión de stock, ventas, clientes, cuotas,
+                            cuentas corrientes, documentación y control financiero. El sistema permite
+                            administrar operaciones complejas mediante múltiples formas de pago automatizadas.
+                            Además, incorpora dashboards ejecutivos,
+                            reportes en tiempo real y una arquitectura SaaS multi-concesionaria preparada
+                            para escalar.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Chart.js</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="view-project-btn" onclick="openProjectModal('modal-project-5')">
+                                <i class="fas fa-eye"></i> Ver Proyecto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Proyecto 1 - E-commerce -->
                 <div class="project-card">
                     <div class="project-image">
@@ -284,9 +339,231 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Proyecto 6 - Gestión Financiera -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-carousel" id="carousel-6">
+                            <div class="carousel-item">
+                                <img src="proyectos/Gestor_Financiero/Dashboard.png" alt="Dashboard financiero">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/Gestor_Financiero/cobros.png" alt="Gestión de cobranzas">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/Gestor_Financiero/Gastos.png" alt="Control de gastos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/Gestor_Financiero/resu_anual.png" alt="Resumen general anual">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <div class="carousel-dot active" data-index="0" data-carousel="6"></div>
+                            <div class="carousel-dot" data-index="1" data-carousel="6"></div>
+                            <div class="carousel-dot" data-index="2" data-carousel="6"></div>
+                            <div class="carousel-dot" data-index="3" data-carousel="6"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Sistema de Gestión Financiera y Cobranzas</h3>
+
+                        <p>
+                            Aplicación de escritorio/web desarrollada para la gestión integral de finanzas
+                            personales y cobranzas de un negocio SaaS. Permite administrar cobros recurrentes
+                            de clientes con generación automática de meses, registro de pagos parciales,
+                            control de gastos fijos y variables, y dashboards con métricas en tiempo real.
+                            Incluye sistema de fichas técnicas de clientes, notificaciones de vencimientos,
+                            carga de comprobantes y reportes exportables.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">Bootstrap 5</span>
+                            <span class="project-tag">Chart.js</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="view-project-btn" onclick="openProjectModal('modal-project-6')">
+                                <i class="fas fa-eye"></i> Ver Proyecto
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Modal Proyecto Concesionaria -->
+    <div id="modal-project-5" class="modal-project">
+        <div class="modal-project-content">
+
+            <div class="modal-project-header">
+                <h2>Sistema de Gestión Integral para Concesionarias</h2>
+                <button class="close-button" onclick="closeProjectModal('modal-project-5')">&times;</button>
+            </div>
+
+            <div class="modal-project-body">
+
+                <div class="modal-project-description">
+                    <p>
+                        Sistema desarrollado para modernizar y profesionalizar la operación
+                        diaria de concesionarias y agencias de vehículos. La plataforma
+                        centraliza toda la gestión comercial, financiera y administrativa
+                        en un único entorno seguro, escalable y preparado para operar
+                        tanto en concesionarias individuales como bajo modalidad SaaS
+                        multi-concesionaria.
+                    </p>
+
+                    <p>
+                        Permite administrar vehículos, ventas, clientes, cuotas,
+                        cuentas corrientes, permutas, documentación digital, métricas
+                        comerciales y reportes financieros. Además incorpora automatizaciones,
+                        sistema de roles y auditoría completa para garantizar trazabilidad
+                        y control de las operaciones.
+                    </p>
+
+                    <p>
+                        <strong>Demo online:</strong>
+                        <a href="https://autoselect-6uq8.onrender.com" target="_blank">
+                            https://autoselect-6uq8.onrender.com
+                        </a>
+                    </p>
+
+                    <p>
+                        La demo pública se encuentra configurada en modo cliente.
+                        Para acceder a los perfiles de Vendedor o Dueño de Concesionaria,
+                        solicitar credenciales de demostración.
+                    </p>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>Características principales:</h4>
+                    <ul>
+                        <li>Gestión completa de stock y catálogo de vehículos.</li>
+                        <li>Control financiero y cálculo de rentabilidad por operación.</li>
+                        <li>Ventas con múltiples formas de pago combinadas.</li>
+                        <li>Administración de cuotas y cuentas corrientes.</li>
+                        <li>Sistema de reservas y señas con vencimientos automáticos.</li>
+                        <li>Gestión integral de permutas.</li>
+                        <li>Dashboard ejecutivo con métricas en tiempo real.</li>
+                        <li>Generación automática de comprobantes y documentos PDF.</li>
+                        <li>Notificaciones automáticas y seguimiento de vencimientos.</li>
+                        <li>Sistema de roles, permisos y auditoría completa.</li>
+                        <li>Arquitectura SaaS multi-concesionaria escalable.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>Objetivos cumplidos:</h4>
+                    <ul>
+                        <li>Centralización total de la operación comercial y administrativa.</li>
+                        <li>Optimización de tiempos de gestión y seguimiento.</li>
+                        <li>Control financiero detallado por vehículo y operación.</li>
+                        <li>Digitalización de procesos internos y documentación.</li>
+                        <li>Automatización de tareas repetitivas.</li>
+                        <li>Mejora en la toma de decisiones mediante métricas y reportes.</li>
+                        <li>Preparación para crecimiento multi-sucursal y modelo SaaS.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>Mi participación:</h4>
+                    <ul>
+                        <li>Diseño y desarrollo integral de la plataforma.</li>
+                        <li>Modelado de base de datos y arquitectura SaaS multi-concesionaria.</li>
+                        <li>Implementación de módulos financieros, comerciales y administrativos.</li>
+                        <li>Desarrollo de dashboards, reportes y métricas comerciales.</li>
+                        <li>Implementación de sistema de permisos y auditoría.</li>
+                        <li>Desarrollo de automatizaciones y procesos programados.</li>
+                        <li>Diseño de experiencia de usuario e interfaz responsive.</li>
+                    </ul>
+                </div>
+
+                <!-- Carrusel -->
+                <div class="modal-project-carousel">
+                    <h4>Imágenes:</h4>
+
+                    <div class="modal-project-carousel-inner" id="modal-carousel-5">
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/Catalogo.png" alt="">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/detalle.png" alt="">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/vehiculos_list.png" alt="">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/Dashboard.png" alt="">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/inffin.png" alt="">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/detalle_venta.png" alt="">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/ventas.png" alt="">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Concesionaria/rendi.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="modal-project-carousel-nav">
+                        <div class="modal-project-carousel-dot active" data-index="0" data-carousel="modal-carousel-5"></div>
+                        <div class="modal-project-carousel-dot" data-index="1" data-carousel="modal-carousel-5"></div>
+                        <div class="modal-project-carousel-dot" data-index="2" data-carousel="modal-carousel-5"></div>
+                        <div class="modal-project-carousel-dot" data-index="3" data-carousel="modal-carousel-5"></div>
+                        <div class="modal-project-carousel-dot" data-index="4" data-carousel="modal-carousel-5"></div>
+                        <div class="modal-project-carousel-dot" data-index="5" data-carousel="modal-carousel-5"></div>
+                        <div class="modal-project-carousel-dot" data-index="6" data-carousel="modal-carousel-5"></div>
+                        <div class="modal-project-carousel-dot" data-index="7" data-carousel="modal-carousel-5"></div>
+                    </div>
+
+                    <button class="carousel-project-arrow prev"
+                        onclick="moveModalCarousel('modal-carousel-5', -1)">❮</button>
+
+                    <button class="carousel-project-arrow next"
+                        onclick="moveModalCarousel('modal-carousel-5', 1)">❯</button>
+
+                </div>
+
+                <div class="modal-project-tech">
+                    <h4>Tecnologías utilizadas:</h4>
+
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Bootstrap</span>
+                        <span class="project-tag">Tailwind CSS</span>
+                        <span class="project-tag">Chart.js</span>
+                        <span class="project-tag">ReportLab</span>
+                        <span class="project-tag">Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Proyecto 1 -->
     <div id="modal-project-1" class="modal-project">
@@ -730,6 +1007,167 @@
                         <span class="project-tag">Git</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 6 -->
+    <div id="modal-project-6" class="modal-project">
+        <div class="modal-project-content">
+
+            <div class="modal-project-header">
+                <h2>Sistema de Gestión Financiera y Cobranzas</h2>
+                <button class="close-button" onclick="closeProjectModal('modal-project-6')">&times;</button>
+            </div>
+
+            <div class="modal-project-body">
+
+                <div class="modal-project-description">
+                    <p>
+                        Sistema integral desarrollado para gestionar las finanzas personales
+                        y las cobranzas de un negocio SaaS. La plataforma permite llevar un control
+                        detallado de los ingresos por suscripciones, gastos operativos, y generar
+                        reportes que facilitan la toma de decisiones financieras.
+                    </p>
+
+                    <p>
+                        La herramienta está diseñada para ser utilizada tanto como aplicación
+                        web local como futura aplicación de escritorio empaquetada con Electron,
+                        permitiendo una transición sencilla a un producto comercial.
+                    </p>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>Características principales:</h4>
+                    <ul>
+                        <li>Dashboard ejecutivo con gráfico de gastos por categoría.</li>
+                        <li>Gestión de cobranzas con clientes, planes y montos.</li>
+                        <li>Generación automática de cobros recurrentes (3, 6, 12 meses).</li>
+                        <li>Registro de pagos parciales y cálculo automático de saldos.</li>
+                        <li>Control de gastos fijos y variables con categorías personalizables.</li>
+                        <li>Gastos recurrentes con generación automática mensual.</li>
+                        <li>Pagos automáticos (débito) sin necesidad de monto exacto.</li>
+                        <li>Fichas técnicas de clientes con datos de contacto y servicio.</li>
+                        <li>Notificaciones de vencimientos próximos y cobros vencidos.</li>
+                        <li>Carga y visualización de comprobantes (PDF, imágenes).</li>
+                        <li>Resúmenes mensuales y anuales de cobros, gastos y balance general.</li>
+                        <li>Filtros por mes, año y estado en todas las vistas.</li>
+                        <li>Exportación de datos a Excel.</li>
+                        <li>Interfaz responsive con Bootstrap 5 y modo oscuro.</li>
+                        <li>Arquitectura preparada para multi-usuario y SaaS.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>Módulos implementados:</h4>
+                    <ul>
+                        <li><strong>Cobranzas:</strong> CRUD completo, generación automática, pagos parciales, historial por cliente.</li>
+                        <li><strong>Gastos:</strong> Registro de egresos, gastos recurrentes, pagos automáticos, categorías.</li>
+                        <li><strong>Clientes:</strong> Ficha técnica con datos de contacto, sistema, plan y notas.</li>
+                        <li><strong>Dashboard:</strong> Métricas del mes, gráfico de torta por categoría, efectividad de cobranza.</li>
+                        <li><strong>Resúmenes:</strong> Vista mensual y anual de cobros, gastos y balance general.</li>
+                        <li><strong>Notificaciones:</strong> Alertas de vencimientos y pagos recibidos.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>Objetivos cumplidos:</h4>
+                    <ul>
+                        <li>Centralización del control financiero personal y del negocio.</li>
+                        <li>Automatización de la generación de cobros recurrentes.</li>
+                        <li>Reducción de tiempo en el seguimiento de pagos pendientes.</li>
+                        <li>Visualización clara de la salud financiera mediante dashboards.</li>
+                        <li>Organización de gastos por categorías para mejor análisis.</li>
+                        <li>Preparación para escalar a producto comercial multi-cliente.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>Mi participación:</h4>
+                    <ul>
+                        <li>Diseño y desarrollo integral del sistema (Full Stack).</li>
+                        <li>Modelado de base de datos relacional con Django ORM.</li>
+                        <li>Implementación de lógica de negocio para cobros y gastos recurrentes.</li>
+                        <li>Desarrollo de dashboard con gráficos dinámicos (Chart.js).</li>
+                        <li>Diseño de interfaz responsive con Bootstrap 5.</li>
+                        <li>Implementación de sistema de notificaciones y alertas.</li>
+                        <li>Arquitectura preparada para migración a multi-usuario.</li>
+                    </ul>
+                </div>
+
+                <!-- Carrusel -->
+                <div class="modal-project-carousel">
+                    <h4>Imágenes:</h4>
+
+                    <div class="modal-project-carousel-inner" id="modal-carousel-6">
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Gestor_Financiero/Dashboard.png" alt="Dashboard principal con gráfico de gastos">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Gestor_Financiero/cobros.png" alt="Lista de cobranzas con filtros">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Gestor_Financiero/Ncobro.png" alt="Formulario de nuevo cobro recurrente">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Gestor_Financiero/Gastos.png" alt="Lista de gastos con estados">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Gestor_Financiero/ficha.png" alt="Ficha técnica de cliente">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Gestor_Financiero/Resu_men.png" alt="Resumen general mensual">
+                        </div>
+
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/Gestor_Financiero/resu_anual.png" alt="Resumen anual con balance">
+                        </div>
+
+                    </div>
+
+                    <div class="modal-project-carousel-nav">
+                        <div class="modal-project-carousel-dot active" data-index="0" data-carousel="modal-carousel-6"></div>
+                        <div class="modal-project-carousel-dot" data-index="1" data-carousel="modal-carousel-6"></div>
+                        <div class="modal-project-carousel-dot" data-index="2" data-carousel="modal-carousel-6"></div>
+                        <div class="modal-project-carousel-dot" data-index="3" data-carousel="modal-carousel-6"></div>
+                        <div class="modal-project-carousel-dot" data-index="4" data-carousel="modal-carousel-6"></div>
+                        <div class="modal-project-carousel-dot" data-index="5" data-carousel="modal-carousel-6"></div>
+                        <div class="modal-project-carousel-dot" data-index="6" data-carousel="modal-carousel-6"></div>
+                        <div class="modal-project-carousel-dot" data-index="7" data-carousel="modal-carousel-6"></div>
+                    </div>
+
+                    <button class="carousel-project-arrow prev"
+                        onclick="moveModalCarousel('modal-carousel-6', -1)">❮</button>
+
+                    <button class="carousel-project-arrow next"
+                        onclick="moveModalCarousel('modal-carousel-6', 1)">❯</button>
+
+                </div>
+
+                <div class="modal-project-tech">
+                    <h4>Tecnologías utilizadas:</h4>
+
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">Bootstrap 5</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Chart.js</span>
+                        <span class="project-tag">AJAX</span>
+                        <span class="project-tag">OpenPyXL</span>
+                        <span class="project-tag">Git</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
