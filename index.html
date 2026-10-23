@@ -115,7 +115,66 @@
             <h2>Proyectos Destacados</h2>
             <div class="projects-container">
 
-                <!-- Proyecto - Concesionaria -->
+                <!-- ================================================================
+                     PROYECTO 1 (NUEVO) - Turnos Médicos SaaS
+                     Imágenes: subir a proyectos/turnos_saas/
+                       - dashboard.png
+                       - calendario.png
+                       - portal_paciente.png
+                       - landing.png
+                     ================================================================ -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-carousel" id="carousel-saas">
+                            <div class="carousel-item">
+                                <img src="proyectos/turnos_saas/dashboard.png" alt="Dashboard con métricas y turnos por estado">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/turnos_saas/calendario.png" alt="Calendario semanal multi-consultorio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="proyectos/turnos_saas/panel_profesional.png" alt="Panel Profesional">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <div class="carousel-dot active" data-index="0" data-carousel="saas"></div>
+                            <div class="carousel-dot" data-index="1" data-carousel="saas"></div>
+                            <div class="carousel-dot" data-index="2" data-carousel="saas"></div>
+                            <div class="carousel-dot" data-index="3" data-carousel="saas"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Sistema de Gestión de Turnos Médicos (SaaS)</h3>
+                        <p>
+                            Plataforma SaaS multi-cliente para consultorios y profesionales independientes.
+                            Centraliza la agenda multi-rol (profesional, secretaría, paciente), historias clínicas
+                            especializadas, portal de autogestión para pacientes, cobranza de obras sociales,
+                            landing page configurable desde el admin y soporte multi-consultorio. Cada organización
+                            opera con su propio espacio aislado, temas visuales y módulos activables.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">ReportLab</span>
+                            <span class="project-tag">Google Calendar API</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="view-project-btn" onclick="openProjectModal('modal-project-saas')">
+                                <i class="fas fa-eye"></i> Ver Proyecto
+                            </button>
+                            <a href="https://terminsalud.onrender.com" target="_blank" class="view-project-btn" style="background: #10b981;">
+                                <i class="fas fa-globe"></i> Demo Online
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================================================================
+                     PROYECTO 2 - Concesionaria
+                     ================================================================ -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-carousel" id="carousel-5">
@@ -172,7 +231,9 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 6 - Gestión Financiera -->
+                <!-- ================================================================
+                     PROYECTO 3 - Gestión Financiera
+                     ================================================================ -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-carousel" id="carousel-6">
@@ -228,7 +289,9 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 1 - E-commerce -->
+                <!-- ================================================================
+                     PROYECTO 4 - E-commerce
+                     ================================================================ -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-carousel" id="carousel-1">
@@ -268,7 +331,9 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 2 - Gestión de Proyectos -->
+                <!-- ================================================================
+                     PROYECTO 5 - Aescyt (Afiliados y Finanzas)
+                     ================================================================ -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-carousel" id="carousel-2">
@@ -308,7 +373,9 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 3 - Analytics -->
+                <!-- ================================================================
+                     PROYECTO 6 - Kine (Proyecto Final de Carrera)
+                     ================================================================ -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-carousel" id="carousel-3">
@@ -333,7 +400,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Gestión de Pacientes, Turnos e Historia Clínica</h3>
+                        <h3>Sistema Clínico — Proyecto Final de Carrera (Scrum Master / Product Owner)</h3>
                         <p>Sistema integral de uso interno para consultorios médicos, desarrollado como proyecto final de carrera. Lideré el equipo como Scrum Master y Product Owner, participando en la definición de alcance, gestión de sprints y comunicación con el cliente. La plataforma centraliza pacientes, turnos e historias clínicas, optimizando tiempos, asegurando trazabilidad y cumpliendo normativas sanitarias.</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
@@ -348,7 +415,9 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 4 - Landing -->
+                <!-- ================================================================
+                     PROYECTO 7 - Landing Médico
+                     ================================================================ -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-carousel" id="carousel-doctor">
@@ -371,7 +440,6 @@
                             <div class="carousel-dot" data-index="1" data-carousel="doctor"></div>
                             <div class="carousel-dot" data-index="2" data-carousel="doctor"></div>
                             <div class="carousel-dot" data-index="3" data-carousel="doctor"></div>
-                            <div class="carousel-dot" data-index="4" data-carousel="doctor"></div>
                         </div>
                     </div>
 
@@ -402,6 +470,194 @@
         </div>
     </section>
 
+    <!-- ====================================================================
+         MODAL - Turnos Médicos SaaS (NUEVO)
+         Imágenes: proyectos/turnos_saas/... (8 imágenes)
+         ==================================================================== -->
+    <div id="modal-project-saas" class="modal-project">
+        <div class="modal-project-content">
+            <div class="modal-project-header">
+                <h2>Sistema de Gestión de Turnos Médicos (SaaS)</h2>
+                <button class="close-button" onclick="closeProjectModal('modal-project-saas')">&times;</button>
+            </div>
+
+            <div class="modal-project-body">
+                <div class="modal-project-description">
+                    <p>
+                        Aplicación web integral para la gestión de turnos, historias clínicas y portal
+                        del paciente, orientada a consultorios y profesionales independientes. Permite
+                        la administración completa de la agenda, la interacción con pacientes mediante
+                        un portal de autogestión y la personalización total de la landing page desde
+                        el panel de administración.
+                    </p>
+                    <p>
+                        Desarrollada como <strong>SaaS multi-cliente</strong>, cada organización tiene
+                        su propio espacio configurable con temas visuales, textos personalizados y
+                        módulos activables. Incluye soporte para <strong>múltiples consultorios por
+                        profesional</strong>, con agendas independientes y resolución automática del
+                        consultorio activo según contexto.
+                    </p>
+                    <p>
+                        El sistema contempla fichas clínicas especializadas para
+                        <strong>kinesiología, odontología, nutrición, fonoaudiología, psicología y
+                        laboratorio</strong>, junto con módulos opcionales de ejercicios por paciente
+                        y planes de alimentación.
+                    </p>
+
+                    <p>
+                        <strong>🔗 Demo online consultorio: </strong>
+                        <a href="https://terminsalud.onrender.com" target="_blank" style="color: #3b82f6;">https://terminsalud.onrender.com</a>
+                    </p>
+                     <p>
+                        <strong>🔗 Demo online prof. independiente: </strong>
+                        <a href="https://terminsalud.onrender.com/gonzalo-martinez-kinesiologia" target="_blank" style="color: #3b82f6;">https://terminsalud.onrender.com/gonzalo-martinez-kinesiologia</a>
+                    </p>
+                   
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>✨ Funcionalidades principales</h4>
+                    <ul>
+                        <li>Gestión de turnos multi-rol (profesional, secretaría, paciente)</li>
+                        <li>Calendario semanal con bloques de horarios, múltiples consultorios, sobreturnos y bloqueos de agenda</li>
+                        <li>Multi-consultorio por profesional con agenda independiente y selector automático de sede activa</li>
+                        <li>Panel de profesional con turnos del día, próximos turnos y acciones rápidas</li>
+                        <li>Panel de secretaría con vista global, filtros por profesional y métricas del día</li>
+                        <li>Portal del paciente: autogestión de turnos, confirmación/cancelación, carga de estudios y visualización de recetas</li>
+                        <li>Historias clínicas con evoluciones, diagnóstico, medicación y archivos adjuntos</li>
+                        <li>Fichas técnicas especializadas (kinesiología, odontología, nutrición, fonoaudiología, psicología, laboratorio)</li>
+                        <li>Módulo de ejercicios por paciente (series, repeticiones, video, imágenes)</li>
+                        <li>Planes de alimentación por paciente estructurados por comidas</li>
+                        <li>Generación de recetas y reportes en PDF (ReportLab)</li>
+                        <li>Cobranza de obras sociales con seguimiento mensual y marcado de cobros</li>
+                        <li>Configuración de cobertura por consultorio con soporte de plus por obra social</li>
+                        <li>Compartir pacientes entre profesionales del mismo consultorio</li>
+                        <li>Dashboard con métricas, navegación temporal y exportación a Excel</li>
+                        <li>Reserva múltiple para turnos recurrentes semanales</li>
+                        <li>Landing pages personalizables con 9 temas visuales (claro/oscuro)</li>
+                        <li>Soporte multi-tenant SaaS con aislamiento de datos por cliente</li>
+                        <li>Sistema de permisos por rol</li>
+                        <li>Integración con Google Calendar para creación/eliminación de eventos</li>
+                        <li>Notificaciones por email en cancelaciones masivas</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>📦 Módulos del sistema</h4>
+                    <ul>
+                        <li><strong>Panel del Profesional:</strong> turnos del día, acciones rápidas, próximos turnos, selector de consultorio activo</li>
+                        <li><strong>Panel de Secretaría:</strong> vista global filtrable por profesional, pase a sala de espera, métricas del día</li>
+                        <li><strong>Portal del Paciente:</strong> turnos, historial, confirmación/cancelación, carga de estudios, visualización de recetas</li>
+                        <li><strong>Historias Clínicas Especializadas:</strong> fichas por especialidad con formularios, gráficos y cálculos automáticos (IMC, ICC, evolución de peso)</li>
+                        <li><strong>Ejercicios y Planes:</strong> rutinas y planes de alimentación asignables por paciente</li>
+                        <li><strong>Dashboard y Reportes:</strong> métricas por período, tasa de asistencia, facturación, exportación a Excel</li>
+                        <li><strong>Cobranza a Obras Sociales:</strong> seguimiento de montos facturados y cobrados, navegación mensual</li>
+                        <li><strong>Landing Configurable:</strong> hero, quiénes somos, horarios, servicios, profesionales, obras sociales y contacto editables desde el admin</li>
+                        <li><strong>Notificaciones:</strong> cancelación masiva con envío de correos, marcado automático de turnos vencidos como "no asistió"</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>🎯 Problemas que resuelve</h4>
+                    <ul>
+                        <li>✅ "Pierdo turnos por olvido" → Portal del paciente con autogestión y confirmación</li>
+                        <li>✅ "No sé cuántos pacientes tengo hoy" → Panel del profesional con métricas en tiempo real</li>
+                        <li>✅ "Mis pacientes quieren sacar turno de madrugada" → Portal online disponible 24/7</li>
+                        <li>✅ "No encuentro el historial del paciente" → Historias clínicas digitales y fichas por especialidad</li>
+                        <li>✅ "Cada consultorio quiere verse diferente" → Landings personalizables sin código</li>
+                        <li>✅ "Los pacientes faltan y no me avisan" → Cancelaciones automáticas y notificaciones</li>
+                        <li>✅ "No sé cuánto me deben las obras sociales" → Módulo de cobranza con seguimiento</li>
+                        <li>✅ "Atiendo en varias sedes y me confundo con los horarios" → Multi-consultorio con agenda independiente</li>
+                        <li>✅ "No sé qué ejercicios darle a cada paciente" → Módulo de ejercicios asignables con video e imágenes</li>
+                    </ul>
+                </div>
+
+                <div class="modal-project-features">
+                    <h4>👨‍💻 Mi participación (Full Stack)</h4>
+                    <ul>
+                        <li>Diseño y desarrollo integral del sistema (backend + frontend)</li>
+                        <li>Modelado completo de la base de datos relacional (Django ORM) con más de 30 modelos</li>
+                        <li>Implementación de lógica de negocio para agendas, turnos simultáneos, sobreturnos, bloqueos, descuento de sesiones y resolución automática de consultorio activo</li>
+                        <li>Desarrollo de paneles con roles diferenciados y control de permisos</li>
+                        <li>Portal del paciente con acceso seguro a turnos, estudios y recetas</li>
+                        <li>Fichas técnicas especializadas con formularios, gráficos y cálculos automáticos</li>
+                        <li>Sistema de landings multi-tenant configurables desde el admin de Django</li>
+                        <li>Creación de 9 temas visuales con soporte para modo oscuro dinámico</li>
+                        <li>Generación de PDF (recetas, informes de laboratorio) con ReportLab</li>
+                        <li>Exportación de datos a Excel con OpenPyXL</li>
+                        <li>Integración de Google Calendar para creación y eliminación de eventos</li>
+                        <li>Notificaciones por email en cancelaciones masivas</li>
+                        <li>Frontend responsive con CSS puro, Flexbox/Grid y Font Awesome</li>
+                        <li>Deploy en Render para demo online</li>
+                    </ul>
+                </div>
+
+                <!-- Carrusel de imágenes del modal -->
+                <div class="modal-project-carousel">
+                    <h4>📸 Capturas del sistema</h4>
+                    <div class="modal-project-carousel-inner" id="modal-carousel-saas">
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/turnos_saas/dashboard.png" alt="Dashboard con métricas del período">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/turnos_saas/calendario.png" alt="Calendario semanal multi-consultorio">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/turnos_saas/panel_profesional.png" alt="Panel del profesional">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/turnos_saas/panel_secretaria.png" alt="Panel de secretaría">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/turnos_saas/portal_paciente.png" alt="Portal del paciente">
+                        </div>
+                        <div class="modal-project-carousel-item">
+                            <img src="proyectos/turnos_saas/historia_clinica.png" alt="Historia clínica especializada">
+                        </div>
+                    </div>
+                    <div class="modal-project-carousel-nav">
+                        <div class="modal-project-carousel-dot active" data-index="0" data-carousel="modal-carousel-saas"></div>
+                        <div class="modal-project-carousel-dot" data-index="1" data-carousel="modal-carousel-saas"></div>
+                        <div class="modal-project-carousel-dot" data-index="2" data-carousel="modal-carousel-saas"></div>
+                        <div class="modal-project-carousel-dot" data-index="3" data-carousel="modal-carousel-saas"></div>
+                        <div class="modal-project-carousel-dot" data-index="4" data-carousel="modal-carousel-saas"></div>
+                        <div class="modal-project-carousel-dot" data-index="5" data-carousel="modal-carousel-saas"></div>
+                        <div class="modal-project-carousel-dot" data-index="6" data-carousel="modal-carousel-saas"></div>
+                        <div class="modal-project-carousel-dot" data-index="7" data-carousel="modal-carousel-saas"></div>
+                    </div>
+                    <button class="carousel-project-arrow prev" onclick="moveModalCarousel('modal-carousel-saas', -1)">❮</button>
+                    <button class="carousel-project-arrow next" onclick="moveModalCarousel('modal-carousel-saas', 1)">❯</button>
+                </div>
+
+                <div class="modal-project-tech">
+                    <h4>🛠️ Tecnologías utilizadas</h4>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">ReportLab</span>
+                        <span class="project-tag">OpenPyXL</span>
+                        <span class="project-tag">Font Awesome</span>
+                        <span class="project-tag">Google Calendar API</span>
+                        <span class="project-tag">Render</span>
+                        <span class="project-tag">Git</span>
+                        <span class="project-tag">Sentry</span>
+                    </div>
+                </div>
+
+                <!-- Cuando tengas el link de Render, descomentá:
+                <div class="modal-project-links">
+                    <a href="TU_LINK_DEMO" target="_blank" class="modal-project-link" style="background: #10b981;">
+                        <i class="fas fa-globe"></i> Demo Online
+                    </a>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Proyecto Concesionaria -->
     <div id="modal-project-5" class="modal-project">
@@ -571,7 +827,7 @@
         </div>
     </div>
 
-    <!-- Modal Proyecto 1 -->
+    <!-- Modal Proyecto E-commerce -->
     <div id="modal-project-1" class="modal-project">
         <div class="modal-project-content">
             <div class="modal-project-header">
@@ -687,7 +943,7 @@
         </div>
     </div>
 
-    <!-- Modal Proyecto 2 -->
+    <!-- Modal Proyecto Aescyt -->
     <div id="modal-project-2" class="modal-project">
         <div class="modal-project-content">
             <div class="modal-project-header">
@@ -794,7 +1050,7 @@
         </div>
     </div>
 
-    <!-- Modal Proyecto 3 -->
+    <!-- Modal Proyecto Kine (Proyecto Final de Carrera) -->
     <div id="modal-project-3" class="modal-project">
         <div class="modal-project-content">
             <div class="modal-project-header">
@@ -908,7 +1164,7 @@
         </div>
     </div>
 
-    <!-- modal landing dr -->
+    <!-- Modal Landing Médico -->
     <div id="modal-project-doctor" class="modal-project">
         <div class="modal-project-content">
             <div class="modal-project-header">
@@ -1017,7 +1273,7 @@
         </div>
     </div>
 
-    <!-- Modal Proyecto 6 -->
+    <!-- Modal Gestor Financiero -->
     <div id="modal-project-6" class="modal-project">
         <div class="modal-project-content">
 
@@ -1198,7 +1454,6 @@
 
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal para imagen ampliada -->
